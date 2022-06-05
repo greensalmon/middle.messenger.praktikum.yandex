@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.hbs",
+    "dev": "parcel src/index.hbs",
     "build": "parcel build index.html"
   },
   "repository": {
