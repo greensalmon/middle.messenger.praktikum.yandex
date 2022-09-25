@@ -5,7 +5,7 @@
 Это исходный код веб-клиента чата, созданного в рамках курса Яндекс.Практикума - Мидл фронтенд-разработчик.
 
 Ссылка на макеты чата в фигме - https://www.figma.com/file/SLHMohMVh860sW6mJxytie/%D0%A7%D0%B0%D1%82?node-id=0%3A1
-Домен приложения Netlify - 
+Домен приложения Netlify - https://sparkly-smakager-7f329a.netlify.app/
 
 ## Разработка
 
