@@ -1,0 +1,32 @@
+---
+title: Chats
+css:
+  - index.css
+  - input.css
+  - button.css
+  - link.css
+  - chats.css
+  - search.css
+  - chatPreview.css
+---
+
+{{!< base}}
+
+<main class="chats-page-wrapper">
+    <div class="chats-page">
+        <div class="feed-wrapper">
+            <div class="feed-wrapper__profile">
+                {{> link href="./profile.hbs" position="right" type="secondary" title="Профиль >" size="m"}}
+            </div>
+            <div class="feed-wrapper__search">
+                {{> search }}
+            </div>
+            <div class="feed-wrapper__chats-list">
+                {{> chatPreview }}
+            </div>
+        </div>
+        <div class="chat-wrapper">
+            Выберите чат, чтобы отправить сообщение
+        </div>
+    </div>
+</main>

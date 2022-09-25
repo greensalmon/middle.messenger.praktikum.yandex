@@ -1,3 +1,56 @@
 :root {
-    --varColor: red;
+    font-family: 'Inter', sans-serif;
+    --box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+
+    --color-blue-basic: #3369F3;
+    --color-blue-extra: #2854C2;
+    --color-gray: #999999;
+    --color-gray-light: #EFEFEF;
+    --color-white: #FFFFFF;
+    --color-block-light: #FBFBFB;
+    --color-text-secondary: #999999;
+    --color-text-primary: #1E1E1E;
+    --color-red-basic: #FF0000;
+    --color-red-extra: #b20000;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.header {
+    margin: 16px 0 56px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.form__container > .input-group {
+    margin-bottom: 32px;
+}
+
+.form__container {
+    .button {
+        margin-top: 62px;
+    }
+
+    .link {
+        margin-top: 14px;
+    }
 }

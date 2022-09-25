@@ -1,6 +1,6 @@
 module.exports = {
-    layouts: 'layouts',
-    partials: 'partials',
-    data: 'data'
+    layouts: './src/layouts',
+    partials: './src/partials',
+    data: './src/data'
 };
   
