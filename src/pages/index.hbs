@@ -1,0 +1,22 @@
+---
+title: Login
+css:
+  - index.css
+  - input.css
+  - button.css
+  - link.css
+---
+
+{{!< base}}
+
+<main class="wrapper">
+  <div class="form">
+    {{> header header="Вход"}}
+    <form class="form__container" id="form-login">
+      {{> input id="login" type="login" label="Логин"}}
+      {{> input id="password" type="password" label="Пароль"}}
+      {{> button type="submit" href="./chats.hbs" form="form-login" view="primary" title="Войти"}}
+      {{> link href="./signup.hbs" type="primary" title="Нет аккаунта?" size="m"}}
+    </form>
+  </div>
+</main>

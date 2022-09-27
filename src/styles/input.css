@@ -1,0 +1,37 @@
+.input-group {
+    position: relative;
+}
+
+.input-group__field {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-blue-basic);
+    padding-bottom: 4px;
+}
+
+.input-group__label {
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    color: var(--color-gray);
+    transition: 0.2s;
+}
+
+.input-group__field:focus ~ .input-group__label {
+    font-size: 10px;
+    top: -12px;
+}
+
+.input-group__field:not(:placeholder-shown) ~ .input-group__label {
+    font-size: 10px;
+    top: -12px;
+}
+
+::-webkit-input-placeholder {
+    color: transparent;
+}
+
+::-moz-placeholder {
+    color: transparent;
+}

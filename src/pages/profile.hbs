@@ -1,0 +1,36 @@
+---
+title: Profile
+css:
+  - index.css
+  - link.css
+  - profileInput.css
+  - profile.css
+  - pageBackLink.css
+---
+
+{{!< base}}
+
+<main class="profile-wrapper">
+    <div class="profile-page">
+        {{> pageBackLink href="./chats.hbs"}}
+        <div class="profile-page__content">
+            <div class="profile-page__user">
+                <div class="profile-page__user-photo"></div>
+                <div class="profile-page__user-name">Иван</div>
+            </div>
+            <div class="profile-page__info">
+                {{> profileInputReadonly label="Почта" type="text" value="pochta@yandex.ru"}}
+                {{> profileInputReadonly label="Логин" type="text" value="ivanivanov"}}
+                {{> profileInputReadonly label="Имя" type="text" value="Иван"}}
+                {{> profileInputReadonly label="Фамилия" type="text" value="Иванов"}}
+                {{> profileInputReadonly label="Имя в чате" type="text" value="Иван"}}
+                {{> profileInputReadonly label="Телефон" type="phone" value="+7(999)999-99-99"}}
+            </div>
+            <div class="profile-page__actions">
+                {{> link href="./profileDataEdit.hbs" position="left" type="primary" title="Изменить данные" size="m"}}
+                {{> link href="./profilePasswordEdit.hbs" position="left" type="primary" title="Изменить пароль" size="m"}}
+                {{> link href="/" position="left" type="warning" title="Выйти" size="m"}}
+            </div>
+        </div>
+    </div>
+</main>

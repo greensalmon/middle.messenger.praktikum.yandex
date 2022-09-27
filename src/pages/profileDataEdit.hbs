@@ -1,0 +1,31 @@
+---
+title: Profile Edit
+css:
+  - index.css
+  - button.css
+  - profileInput.css
+  - profile.css
+  - pageBackLink.css
+---
+
+{{!< base}}
+
+<main class="profile-data-edit-wrapper">
+    <div class="profile-data-edit-page">
+        {{> pageBackLink href="./profile.hbs"}}
+        <div class="profile-page__content">
+            <div class="profile-page__user-photo"></div>
+            <form class="form__container" id="profile-edit-form">
+                <div class="profile-page__info">
+                    {{> profileInput name="email" label="Почта" type="text" value="pochta@yandex.ru"}}
+                    {{> profileInput name="login" label="Логин" type="text" value="ivanivanov"}}
+                    {{> profileInput name="first_name" label="Имя" type="text" value="Иван"}}
+                    {{> profileInput name="second_name" label="Фамилия" type="text" value="Иванов"}}
+                    {{> profileInput name="display_name" label="Имя в чате" type="text" value="Иван"}}
+                    {{> profileInput name="phone" label="Телефон" type="phone" value="+7(999)999-99-99"}}
+                </div>
+                {{> button type="submit" href="./profile.hbs" form="profile-edit-form" view="primary" title="Сохранить"}}
+            </form>
+        </div>
+    </div>
+</main>

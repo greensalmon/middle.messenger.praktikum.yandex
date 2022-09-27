@@ -1,0 +1,32 @@
+.chat-preview {
+    display: flex;
+    border-top: 1px solid var(--color-gray-light);
+    padding: 12px 0;
+
+    .chat-preview__avatar {
+        height: 48px;
+        min-width: 48px;
+        border-radius: 50%;
+        background-color: var(--color-gray-light);
+    }
+
+    .chat-preview__info {
+        padding: 0 10px;
+
+        .chat-preview__name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .chat-preview__message {
+            margin-top: 4px;
+            color: var(--color-gray);
+            font-size: 12px;
+        }
+    }
+
+    .chat-preview__time {
+        color: var(--color-gray);
+        font-size: 10px;
+    }
+}

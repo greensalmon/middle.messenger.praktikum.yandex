@@ -1,0 +1,32 @@
+{
+  "name": "practicum-chat",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=12.16.1"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && parcel build src/pages/index.hbs --no-cache --public-url ./",
+    "start": "npm run build && node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greensalmon/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "Garipova Alina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greensalmon/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/greensalmon/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "autoprefixer": "10.4.8",
+    "buffer": "6.0.3",
+    "express": "4.18.1",
+    "parcel": "2.3.2",
+    "postcss": "8.4.16",
+    "postcss-nested": "5.0.6",
+    "process": "0.11.10"
+  }
+}

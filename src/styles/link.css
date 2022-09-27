@@ -1,0 +1,67 @@
+.link-container {
+    text-align: center;
+}
+
+.link-container.right {
+    text-align: right;
+}
+.link-container.left {
+    text-align: left;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.link.s {
+    font-size: 12px;
+}
+
+.link.m {
+    font-size: 14px;
+}
+
+.link.l {
+    font-size: 18px;
+}
+
+.link.xl {
+    font-size: 22px;
+}
+
+.link.primary {
+    color: var(--color-blue-basic);
+
+    &:visited {
+        color: var(--color-blue-basic);
+    }
+
+    &:hover {
+        color: var(--color-blue-extra);
+    }
+}
+
+.link.secondary {
+    color: var(--color-gray);
+
+    &:visited {
+        color: var(--color-gray);
+    }
+
+    &:hover {
+        color: var(--color-blue-extra);
+    }
+}
+
+.link.warning {
+    color: var(--color-red-basic);
+
+    &:visited {
+        color: var(--color-red-basic);
+    }
+
+    &:hover {
+        color: var(--color-red-extra);
+    }
+}

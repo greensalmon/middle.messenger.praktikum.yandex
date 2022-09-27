@@ -1,0 +1,20 @@
+---
+title: 404 Not Found
+css:
+  - index.css
+  - link.css
+  - error.css
+---
+
+{{!< base}}
+
+<main class="error-wrapper">
+  <div class="error-page">
+    <div class="error-page__info">
+        <div class="error-page__status">404</div>
+        <div class="error-page__message">Не туда попали</div>
+        {{> link href="./chats.hbs" type="primary" position="left" title="Назад к чатам" size="m"}}
+    </div>
+    <div class="error-page__image hedgehog"></div>
+  </div>
+</main>

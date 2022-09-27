@@ -1,0 +1,30 @@
+.chats-page-wrapper {
+    height: 100%;
+
+    .chats-page {
+        display: flex;
+        height: 100%;
+
+        .feed-wrapper {
+            height: 100%;
+            min-width: 310px;
+            background-color: var(--color-block-light);
+            padding: 22px 10px;
+
+            .feed-wrapper__profile {
+                justify-content: right;
+            }
+
+            .feed-wrapper__search {
+                padding: 14px 14px 14px 0;
+            }
+        }
+
+        .chat-wrapper {
+            width: 100%;
+            color: var(--color-text-secondary);
+            text-align: center;
+            align-self: center;
+        }
+    }
+}

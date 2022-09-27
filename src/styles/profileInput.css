@@ -1,0 +1,20 @@
+.profile-input {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-gray-light);
+    padding-bottom: 10px;
+    font-size: 14px;
+
+    &__label {
+       color: var(--color-text-primary);
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        color: var(--color-gray);
+        text-align: right;
+        min-width: 250px;
+    }
+}

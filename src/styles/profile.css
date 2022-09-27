@@ -1,0 +1,55 @@
+.profile-wrapper, .profile-data-edit-wrapper, .profile-password-edit-wrapper {
+    height: 100%;
+
+    .profile-page, .profile-data-edit-page, .profile-password-edit-page {
+        height: 100%;
+        display: flex;
+
+        .profile-page__content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            
+            .profile-page__user-photo {
+                display: flex;
+                height: 130px;
+                width: 130px;
+                background-size: cover;
+                background-image: url("../../static/images/default-avatar.png");
+
+                /* Верну, когда будет логика для модалок */
+                /* &:hover {
+                    cursor: pointer;
+                    background-image: url("../../static/images/default-avatar-hover.png");
+                } */
+            }
+
+            .profile-page__user-name {
+                text-align: center;
+                margin-top: 8px;
+                font-weight: 600;
+            }
+
+            .profile-page__info {
+                width: 510px;
+                margin-top: 60px;
+
+                & > .profile-input:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .profile-page__actions {
+                width: 510px;
+                margin-top: 54px;
+
+                & > .link-container:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}

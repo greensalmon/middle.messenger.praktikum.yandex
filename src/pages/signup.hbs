@@ -1,0 +1,27 @@
+---
+title: Login
+css:
+  - index.css
+  - input.css
+  - button.css
+  - link.css
+---
+
+{{!< base}}
+
+<main class="wrapper">
+  <div class="form">
+    {{> header header="Регистрация"}}
+    <form class="form__container" id="form-login">
+      {{> input id="first_name" type="text" label="Имя"}}
+      {{> input id="second_name" type="text" label="Фамилия"}}
+      {{> input id="login" type="login" label="Логин"}}
+      {{> input id="email" type="email" label="Почта"}}
+      {{> input id="phone" type="phone" label="Телефон"}}
+      {{> input id="password" type="password" label="Пароль"}}
+      {{> input id="password_again" type="password" label="Пароль (еще раз)"}}
+      {{> button type="submit" href="./chats.hbs" form="form-login" view="primary" title="Зарегистрироваться"}}
+      {{> link href="./index.hbs" type="primary" title="Войти" size="m"}}
+    </form>
+  </div>
+</main>
