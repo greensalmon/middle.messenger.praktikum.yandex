@@ -1,5 +1,5 @@
 
-export function range(start, end, step) {
+export function range(start: number, end: number, step: number, fromRight: boolean = false) {
     if (end === undefined) {
         end = start;
         start = 0;
@@ -9,13 +9,13 @@ export function range(start, end, step) {
         step = start < end ? 1 : -1;
     }
     
-    const result = [];
+    const result: number[] = [];
     
     let index = -1;
     let length = (end - start) / (step || 1);
     
     while (length--) {
-        result[++index] = start;
+        result[fromRight ? length : ++index] = start;
         start += step;
     }
 
