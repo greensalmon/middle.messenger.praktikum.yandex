@@ -7,7 +7,7 @@
     font-size: 14px;
 
     &__label {
-       color: var(--color-text-primary);
+        color: var(--color-text-primary);
     }
 
     &__input {

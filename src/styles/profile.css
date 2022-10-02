@@ -1,7 +1,11 @@
-.profile-wrapper, .profile-data-edit-wrapper, .profile-password-edit-wrapper {
+.profile-wrapper,
+.profile-data-edit-wrapper,
+.profile-password-edit-wrapper {
     height: 100%;
 
-    .profile-page, .profile-data-edit-page, .profile-password-edit-page {
+    .profile-page,
+    .profile-data-edit-page,
+    .profile-password-edit-page {
         height: 100%;
         display: flex;
 
@@ -12,7 +16,6 @@
             align-items: center;
             flex-direction: column;
 
-            
             .profile-page__user-photo {
                 display: flex;
                 height: 130px;
@@ -21,6 +24,7 @@
                 background-image: url("../../static/images/default-avatar.png");
 
                 /* Верну, когда будет логика для модалок */
+
                 /* &:hover {
                     cursor: pointer;
                     background-image: url("../../static/images/default-avatar-hover.png");

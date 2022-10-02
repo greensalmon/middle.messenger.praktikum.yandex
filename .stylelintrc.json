@@ -1,0 +1,14 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "color-hex-case": "lower",
+        "color-no-invalid-hex": true,
+        "block-no-empty": true,
+        "indentation": 4,
+        "selector-class-pattern": null,
+        "selector-pseudo-element-no-unknown": true
+    },
+    "ignoreFiles": [
+        "dist/*"
+    ]
+} 

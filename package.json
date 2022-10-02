@@ -9,7 +9,9 @@
     "build": "rm -rf ./dist && parcel build src/pages/index.hbs --no-cache --public-url ./",
     "start": "npm run build && node ./src/server.ts",
     "lint:ts": "eslint ./src --ext .ts,.js",
-    "lint:fix": "eslint ./src --ext .ts,.js --fix"
+    "lint:ts:fix": "eslint ./src --ext .ts,.js --fix",
+    "lint:css": "stylelint ./src/**/*.css",
+    "lint:css:fix": "stylelint ./src/**/*.css --fix"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,8 @@
     "postcss": "8.4.16",
     "postcss-nested": "5.0.6",
     "process": "0.11.10",
+    "stylelint": "^14.13.0",
+    "stylelint-config-standard": "^28.0.0",
     "typescript": "4.8.4"
   }
 }

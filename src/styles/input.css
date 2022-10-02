@@ -28,10 +28,6 @@
     top: -12px;
 }
 
-::-webkit-input-placeholder {
-    color: transparent;
-}
-
-::-moz-placeholder {
+input::placeholder {
     color: transparent;
 }

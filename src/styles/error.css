@@ -6,26 +6,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    
+
         .error-page__info {
             text-align: left;
-    
+
             .error-page__status {
                 font-weight: 700;
                 font-size: 40px;
             }
-    
+
             .error-page__message {
                 font-weight: 500;
                 font-size: 20px;
                 margin-top: 16px;
             }
-    
+
             .link-container {
                 margin-top: 28px;
             }
         }
-    
+
         .error-page__image {
             height: 140px;
             width: 140px;
